@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Spinner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Article Spinner Tool</h1>
+    </header>
+
+    <main>
+      <!-- Input Section -->
+      <section class="input-section">
+        <h2>Input Article</h2>
+        <textarea id="article-input" placeholder="Paste your article here..."></textarea>
+
+        <h2>SEO Keywords</h2>
+        <input type="text" id="keywords-input" placeholder="Enter SEO keywords (comma-separated)" />
+
+        <label for="intensity">Spinning Intensity:</label>
+        <select id="intensity">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button id="spin-button">Spin Article</button>
+      </section>
+
+      <!-- Output Section -->
+      <section class="output-section">
+        <h2>Spun Article</h2>
+        <div id="output" class="output-box">
+          <p>Your spun article will appear here.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Article Spinner Tool</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
